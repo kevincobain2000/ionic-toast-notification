@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> 
+    
+    <title>Ionic Photo Browser</title>
+
+    <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
+    <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
+  
+    <!-- THE ADDITION -->
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/nolimits4web/Framework7/master/dist/css/framework7.ios.css">
+    <script src="https://rawgit.com/nolimits4web/Framework7/master/dist/js/framework7.js"></script>
+    <!-- ENDS -->
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/app.js"></script>
+    <script src="cordova.js"></script>
+  </head>
+  <body ng-controller="AppCtrl">
+    
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Toast Notifications</h1>
+      <div class="buttons">
+        <a href="https://github.com/kevincobain2000/ionic-toast-notification" class="button button-clear button-dark">Github <i class="ion-chevron-right "></i></a>
+      </div>
+    </ion-header-bar>
+    <ion-content>
+      <div class="text-muted text-center">
+          <p><i class="icon-font-xl ion-android-notifications-none"></i></p>
+          <h4>Toast Notifications</h4>
+          <p>With Notifications component you can show required messages that looks like Push (or Local) iOS notifications. Ionic already now provides a push service. It'd be good to be able to show beautiful toasts to your users</p>
+      </div>
+      <ion-list>
+        <ion-item class="item item-icon-right" ng-repeat="toast in toasts" ng-click="show(toast)">
+          <h2>{{toast.label}}</h2>
+          <p>{{toast.params}}</p>
+          <i class="icon ion-chevron-right icon-font-sm"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </body>
+</html>
