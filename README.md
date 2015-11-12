@@ -1,6 +1,6 @@
 ### DEMO (codepen)
 
-![alt tag](animate.gif)
+<iframe src="//giphy.com/embed/U90cTy9NRLjUI" width="250" height="411" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
 
 http://codepen.io/kevincobain2000/pen/dYQBLK
 
